@@ -188,23 +188,7 @@
 }
 </script>
 
-<!-- Structured Data (injected from config.js) -->
-<script id="orgLd" type="application/ld+json"></script>
-<script>
-(function(){
-  var c = SITE_CONFIG.brand;
-  var ld = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": c.fullName,
-    "alternateName": "HongJun Technology",
-    "logo": c.domain + "/images/logo.jpg",
-    "url": c.domain,
-    "sameAs": [c.mainDomain]
-  };
-  document.getElementById('orgLd').textContent = JSON.stringify(ld, null, 2);
-})();
-</script>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -650,7 +634,7 @@ textarea.form-input { resize: vertical; min-height: 100px; }
   cursor: pointer; transition: var(--transition);
 }
 .btn-submit:hover { background: var(--accent-hover); transform: translateY(-1px); }
-.contact-sidebar { padding-top: 20px; }
+.contact-sidebar { padding-top: 0px; }
 .contact-method {
   display: flex; align-items: flex-start; gap: 16px; padding: 24px;
   background: var(--gray-50); border-radius: var(--radius-lg); margin-bottom: 16px;
@@ -785,6 +769,24 @@ textarea.form-input { resize: vertical; min-height: 100px; }
 </style>
   <script src="config.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<!-- Structured Data (injected from config.js) -->
+<script id="orgLd" type="application/ld+json"></script>
+<script>
+(function(){
+  var c = SITE_CONFIG.brand;
+  var ld = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": c.fullName,
+    "alternateName": "HongJun Technology",
+    "logo": c.domain + "/images/logo.jpg",
+    "url": c.domain,
+    "sameAs": [c.mainDomain]
+  };
+  document.getElementById('orgLd').textContent = JSON.stringify(ld, null, 2);
+})();
+</script>
 </head>
 <body>
 
@@ -794,7 +796,7 @@ textarea.form-input { resize: vertical; min-height: 100px; }
     <a href="#" class="logo">
       <img src="images/logo.jpg" alt="HongJun Logo" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
       <div class="logo-icon" style="display:none">H</div>
-      <span>HongJun</span>
+      <span>HongJun Autodispenser Pro</span>
     </a>
     <nav class="nav" id="nav">
       <a href="#products">Products</a>
@@ -1134,7 +1136,7 @@ textarea.form-input { resize: vertical; min-height: 100px; }
         <div class="logo">
           <img src="images/logo.jpg" alt="HongJun Logo" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
           <div class="logo-icon" style="display:none">H</div>
-          <span>HongJun</span>
+          <span>HongJun Autodispenser Pro</span>
         </div>
         <p>HongJun - Leading <strong>automatic dispensing machine manufacturer</strong> in China. Specialized in epoxy resin dispensing systems, glue dispensing robots, high precision dispensing valves, desktop dispensing machines for PCB, vacuum potting machines, and encapsulation equipment. 15+ years experience, ISO/CE/SGS certified.</p>
         <div class="footer-social">
