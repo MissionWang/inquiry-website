@@ -1,0 +1,12 @@
+# robots.txt for HongJun Automatic Dispensing Machine Manufacturer
+User-agent: *
+Allow: /
+
+Sitemap: https://www.hongjunshuke.com/sitemap.xml
+
+# Crawl-delay to prevent overloading
+Crawl-delay: 1
+
+# Disallow temporary or sensitive paths (if any)
+# Disallow: /private/
+# Disallow: /temp/

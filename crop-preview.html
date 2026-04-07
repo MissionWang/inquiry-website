@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>产品图片裁剪对比预览</title>
+<style>
+body { font-family: sans-serif; background: #f5f5f5; padding: 20px; }
+h1 { text-align: center; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+.card { background: white; border-radius: 12px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+.card h3 { margin: 0 0 12px; font-size: 14px; color: #333; }
+.comparison { display: flex; flex-direction: column; gap: 12px; }
+.crop-row { display: flex; align-items: center; gap: 10px; }
+.crop-row img { width: 200px; height: 200px; object-fit: cover; object-position: top; border: 1px solid #ddd; border-radius: 8px; }
+.crop-row .label { font-size: 13px; color: #666; min-width: 80px; }
+.crop-row .label b { color: #333; }
+.crop-row input[type="range"] { width: 120px; accent-color: #0f52ba; }
+.full img { width: 100%; height: auto; object-fit: contain; border: 1px solid #ddd; border-radius: 8px; }
+</style>
+</head>
+<body>
+<h1>📐 产品图片裁剪对比预览</h1>
+<p style="text-align:center;color:#666;">对比不同裁剪比例，选择最合适的效果。图片上的中文文字主要集中在底部。</p>
+
+<div class="grid" id="grid"></div>
+
+<script>
+const products = [];
+for (let i = 1; i <= 26; i++) {
+  products.push({ num: String(i).padStart(2, '0'), src: `images/products/product-${String(i).padStart(2, '0')}.jpg` });
+}
+
+// Show first 6 products for quick comparison
+const show = products.slice(0, 6);
+const grid = document.getElementById('grid');
+
+show.forEach(p => {
+  const card = document.createElement('div');
+  card.className = 'card';
+  card.innerHTML = `
+    <h3>Product ${p.num} - 裁剪对比</h3>
+    <div class="comparison">
+      <div class="crop-row full">
+        <div>
+          <img src="${p.src}" style="width:100%;height:auto;">
+          <div class="label"><b>原图完整</b></div>
+        </div>
+      </div>
+      <div class="crop-row">
+        <div>
+          <img src="${p.src}" style="object-fit:cover;object-position:top;">
+          <div class="label"><b>裁剪 85%</b> - 显示上方85%</div>
+        </div>
+        <div>
+          <img src="${p.src}" style="height:200px;width:200px;object-fit:cover;object-position:top;clip-path:inset(0 0 15% 0);">
+          <div class="label"><b>裁剪 85%</b></div>
+        </div>
+      </div>
+      <div class="crop-row">
+        <div>
+          <img src="${p.src}" style="height:200px;width:200px;object-fit:cover;object-position:top;clip-path:inset(0 0 10% 0);">
+          <div class="label"><b>裁剪 90%</b> - 显示上方90%</div>
+        </div>
+        <div>
+          <img src="${p.src}" style="height:200px;width:200px;object-fit:cover;object-position:top;clip-path:inset(0 0 20% 0);">
+          <div class="label"><b>裁剪 80%</b> - 显示上方80%</div>
+        </div>
+      </div>
+    </div>
+  `;
+  grid.appendChild(card);
+});
+</script>
+</body>
+</html>

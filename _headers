@@ -1,0 +1,27 @@
+# Cloudflare Pages deployment configuration
+# Place this file in the project root directory
+
+# Build settings
+[build]
+  command = "echo 'Static site - no build required'"
+  publish = "."
+
+# Headers for performance and security
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# Redirect www to apex domain (uncomment when domain is configured)
+# [[redirects]]
+#   from = "https://www.dianmi-machine.com/*"
+#   to = "https://dianmi-machine.com/:splat"
+#   status = 301

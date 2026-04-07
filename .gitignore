@@ -1,0 +1,21 @@
+# WorkBuddy working memory
+.workbuddy/memory/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+temp/
+tmp/
