@@ -1,0 +1,42 @@
+# 图片尺寸配置文件
+# 用于优化页面加载，防止布局偏移（CLS）
+# 格式: 文件名 = 宽度x高度
+
+## Products Images（产品图片）
+# 注意: 实际尺寸需要通过工具获取，这里提供推荐尺寸
+
+product-01.jpg = 800x600
+product-02.jpg = 800x600
+product-05.jpg = 800x600
+product-06.jpg = 800x600
+product-07.jpg = 800x600
+product-09.jpg = 800x600
+product-18.jpg = 800x600
+_test_01.jpg = 800x600
+_test_02.jpg = 800x600
+_test_03.jpg = 800x600
+
+## Videos（视频封面）
+product-01.jpg = 1280x720  # video-1.mp4 封面
+product-02.jpg = 1280x720  # video-2.mp4 封面
+
+## Logo
+logo.jpg = 200x60
+
+## 使用方法
+# 1. 获取实际尺寸（使用 PowerShell）:
+#    Add-Type -AssemblyName System.Drawing
+#    $img = [System.Drawing.Image]::FromFile('product-01.jpg')
+#    Write-Host "$($img.Width)x$($img.Height)"
+
+# 2. 在 HTML 中使用:
+#    <img src="images/products/product-01.jpg" width="800" height="600" loading="lazy">
+
+# 3. 或使用 srcset 响应式图片:
+#    <img src="images/products/product-01.jpg"
+#         srcset="images/products/product-01-320w.jpg 320w,
+#                 images/products/product-01-640w.jpg 640w,
+#                 images/products/product-01-800w.jpg 800w"
+#         sizes="(max-width: 640px) 320px, (max-width: 800px) 640px, 800px"
+#         width="800" height="600"
+#         loading="lazy">
