@@ -57,5 +57,5 @@ images/
 
 **当前品牌配置**：
 - 品牌名称: HongJun
-- 域名: https://hongjunshuke.com
+- 域名: https://autodispenserpro.com
 - 全称: HongJun Vacuum Encapsulation Technology

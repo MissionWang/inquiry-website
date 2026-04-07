@@ -7,8 +7,8 @@ const SITE_CONFIG = {
   brand: {
     name: 'HongJun',
     fullName: 'HongJun Vacuum Encapsulation Technology',
-    domain: 'https://www.hongjunshuke.com',  // 二级域名: www
-    mainDomain: 'https://hongjunshuke.com',  // 主域名
+    domain: 'https://www.autodispenserpro.com',  // 二级域名: www
+    mainDomain: 'https://autodispenserpro.com',  // 主域名
     year: 2026
   },
 
