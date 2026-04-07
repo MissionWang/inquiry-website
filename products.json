@@ -65,6 +65,23 @@
       "leadTime": "35-45 working days",
       "customizable": true,
       "customizationOptions": ["Chamber Dimensions", "Vacuum Level", "Door Mechanism", "Internal Fixtures"]
+    },
+    {
+      "id": "HJ-VPM-006",
+      "name": "Heating & Curing System",
+      "chineseName": "加热固化系统",
+      "category": "Curing Equipment",
+      "badge": "",
+      "image": "images/products/product-06.png",
+      "shortDesc": "Integrated heating and curing system for rapid material solidification.",
+      "description": "Precision temperature control with uniform heating distribution. Accelerates curing process for epoxy, polyurethane, and silicone materials.",
+      "applications": ["Epoxy Curing", "Polyurethane Processing", "Temperature Sensitive Materials"],
+      "price": "Custom Quote",
+      "pricingNote": "Price varies based on customization requirements",
+      "moq": "1 Unit (Customizable)",
+      "leadTime": "20-25 working days",
+      "customizable": true,
+      "customizationOptions": ["Temperature Range", "Chamber Size", "Heating Zones", "Control System"]
     }
   ]
 }
