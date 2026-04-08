@@ -2,7 +2,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.autodispenserpro.com/sitemap.xml
+Sitemap: https://autodispenserpro.com/sitemap.xml
 
 # Crawl-delay to prevent overloading
 Crawl-delay: 1

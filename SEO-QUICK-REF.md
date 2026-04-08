@@ -119,7 +119,7 @@ wrangler pages deploy . --project-name=hongjun-website
 ### 测试页面速度
 ```bash
 # 本地测试
-npx lighthouse https://www.hongjunshuke.com --view
+npx lighthouse https://autodispenserpro.com --view
 
 # 在线测试
 # https://pagespeed.web.dev/

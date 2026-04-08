@@ -7,7 +7,7 @@ const SITE_CONFIG = {
   brand: {
     name: 'HongJun',
     fullName: 'HongJun Vacuum Encapsulation Technology',
-    domain: 'https://www.autodispenserpro.com',  // 二级域名: www
+    domain: 'https://autodispenserpro.com',  // 主域名
     mainDomain: 'https://autodispenserpro.com',  // 主域名
     year: 2026
   },
@@ -21,7 +21,7 @@ const SITE_CONFIG = {
 
   // Contact
   contact: {
-    email: 'info@mail.hongjunshuke.com',
+    email: 'info@autodispenserpro.com',
     phone: '+86 15346172906',
     phoneRaw: '+86 15346172906',           // for tel: href
     whatsapp: '+86 15346172906',

@@ -26,7 +26,7 @@
 
 #### ✅ Canonical Tags 配置
 - [x] 已在 index.html 中配置 canonical 标签
-- [x] 所有链接使用 `https://www.hongjunshuke.com/`
+- [x] 所有链接使用 `https://autodispenserpro.com/`
 - [x] sitemap.xml 已更新为 www 子域名
 
 #### ✅ Robots.txt 检查
@@ -123,7 +123,7 @@
   "@type": "VideoObject",
   "name": "Automatic Vacuum Potting Machine Demo",
   "description": "Watch our automatic dispensing machine in action...",
-  "thumbnailUrl": "https://www.hongjunshuke.com/images/products/product-01.jpg",
+  "thumbnailUrl": "https://autodispenserpro.com/images/products/product-01.jpg",
   "uploadDate": "2026-04-07",
   "duration": "PT2M30S"
 }

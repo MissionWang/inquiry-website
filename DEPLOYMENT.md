@@ -3,8 +3,8 @@
 ## 域名配置
 
 ### 主域名
-- **主域名**: hongjunshuke.com
-- **二级域名**: www.hongjunshuke.com
+- **主域名**: autodispenserpro.com
+- **二级域名**: autodispenserpro.com
 
 ### DNS 配置
 
@@ -41,21 +41,21 @@ A       www         [你的服务器IP地址]            已代理（橙色云�
 server {
     listen 80;
     listen [::]:80;
-    server_name www.hongjunshuke.com hongjunshuke.com;
+    server_name autodispenserpro.com autodispenserpro.com;
 
     # 重定向到 www
-    if ($host = 'hongjunshuke.com') {
-        return 301 https://www.hongjunshuke.com$request_uri;
+    if ($host = 'autodispenserpro.com') {
+        return 301 https://autodispenserpro.com$request_uri;
     }
 
     # HTTPS 重定向
-    return 301 https://www.hongjunshuke.com$request_uri;
+    return 301 https://autodispenserpro.com$request_uri;
 }
 
 server {
     listen 443 ssl http2;
     listen [::]:443 ssl http2;
-    server_name www.hongjunshuke.com;
+    server_name autodispenserpro.com;
 
     # SSL 证书配置
     ssl_certificate /path/to/ssl/cert.pem;
@@ -67,7 +67,7 @@ server {
     ssl_prefer_server_ciphers on;
 
     # 网站根目录
-    root /var/www/hongjunshuke.com;
+    root /var/www/autodispenserpro.com;
     index index.html;
 
     # 静态文件缓存
@@ -96,13 +96,13 @@ server {
 
 ```apache
 <VirtualHost *:80>
-    ServerName hongjunshuke.com
-    Redirect permanent / https://www.hongjunshuke.com/
+    ServerName autodispenserpro.com
+    Redirect permanent / https://autodispenserpro.com/
 </VirtualHost>
 
 <VirtualHost *:443>
-    ServerName www.hongjunshuke.com
-    DocumentRoot /var/www/hongjunshuke.com
+    ServerName autodispenserpro.com
+    DocumentRoot /var/www/autodispenserpro.com
     
     # SSL 配置
     SSLEngine on
@@ -125,7 +125,7 @@ server {
         ExpiresByType application/javascript "access plus 1 year"
     </IfModule>
 
-    <Directory /var/www/hongjunshuke.com>
+    <Directory /var/www/autodispenserpro.com>
         Options -Indexes +FollowSymLinks
         AllowOverride All
         Require all granted
@@ -140,13 +140,13 @@ server {
 2. 构建设置：
    - 构建命令: (留空)
    - 发布目录: (留空，使用根目录)
-3. 添加域名: `www.hongjunshuke.com`
+3. 添加域名: `autodispenserpro.com`
 4. Netlify 自动配置 HTTPS 和重定向
 
 #### Vercel
 1. 安装 Vercel CLI: `npm i -g vercel`
 2. 在项目目录运行: `vercel`
-3. 在 Vercel 控制台添加自定义域名: `www.hongjunshuke.com`
+3. 在 Vercel 控制台添加自定义域名: `autodispenserpro.com`
 
 #### Cloudflare Pages
 1. 连接 GitHub 仓库或直接上传
@@ -164,7 +164,7 @@ server {
 sudo apt-get install certbot python3-certbot-nginx
 
 # 自动获取并配置证书
-sudo certbot --nginx -d www.hongjunshuke.com -d hongjunshuke.com
+sudo certbot --nginx -d autodispenserpro.com -d autodispenserpro.com
 
 # 自动续期
 sudo certbot renew --dry-run
@@ -194,7 +194,7 @@ sudo certbot renew --dry-run
 ## 安全配置
 
 ### 1. HTTPS 强制跳转
-已配置主域名 `hongjunshuke.com` 重定向到 `www.hongjunshuke.com`
+已配置主域名 `autodispenserpro.com` 重定向到 `autodispenserpro.com`
 
 ### 2. 安全头
 ```nginx
@@ -215,8 +215,8 @@ chmod 644 images/*.jpg images/*.mp4
 ## SEO 配置
 
 ### 1. 提交站点地图
-- Google Search Console: `https://www.hongjunshuke.com/sitemap.xml`
-- Bing Webmaster Tools: `https://www.hongjunshuke.com/sitemap.xml`
+- Google Search Console: `https://autodispenserpro.com/sitemap.xml`
+- Bing Webmaster Tools: `https://autodispenserpro.com/sitemap.xml`
 
 ### 2. 百度站长平台
 - 添加网站并验证
@@ -294,7 +294,7 @@ emailjs: {
 # 创建备份脚本
 #!/bin/bash
 DATE=$(date +%Y%m%d)
-tar -czf backup-$DATE.tar.gz /var/www/hongjunshuke.com
+tar -czf backup-$DATE.tar.gz /var/www/autodispenserpro.com
 ```
 
 ### 日志监控

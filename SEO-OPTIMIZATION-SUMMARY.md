@@ -58,7 +58,7 @@
 #### 3. Image Sitemap Extension
 ```xml
 <image:image>
-  <image:loc>https://hongjunshuke.com/images/products/product-01.jpg</image:loc>
+  <image:loc>https://autodispenserpro.com/images/products/product-01.jpg</image:loc>
   <image:title>HongJun Automatic Vacuum Potting Machine</image:title>
   <image:caption>Automatic dispensing machine and epoxy resin dispensing system for PCB</image:caption>
 </image:image>

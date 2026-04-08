@@ -134,19 +134,19 @@
 
 ### 5. Page Rules（页面规则）
 
-#### 域名重定向（hongjunshuke.com → www.hongjunshuke.com）
+#### 域名重定向（autodispenserpro.com → autodispenserpro.com）
 在 Cloudflare Dashboard > Rules > Page Rules:
 ```
 规则 1: 主域名到二级域名重定向
-- URL pattern: hongjunshuke.com/*
+- URL pattern: autodispenserpro.com/*
 - 设置: Forwarding URL (301)
-- 目标: https://www.hongjunshuke.com/$1
+- 目标: https://autodispenserpro.com/$1
 ```
 
 #### HTTPS 强制
 ```
 规则 2: 强制 HTTPS
-- URL pattern: *hongjunshuke.com/*
+- URL pattern: *autodispenserpro.com/*
 - 设置: Always Use HTTPS: On
 ```
 
@@ -157,7 +157,7 @@
 #### 添加域名
 1. 在 Cloudflare Dashboard > Pages > hongjun-website > Custom Domains
 2. 点击 "Set up a custom domain"
-3. 输入 `www.hongjunshuke.com`
+3. 输入 `autodispenserpro.com`
 4. 按照提示配置 DNS 记录：
    ```
    类型: CNAME
@@ -210,7 +210,7 @@
 ### Cloudflare Web Analytics
 1. 在 Cloudflare Dashboard > Analytics & Logs > Web Analytics
 2. 点击 "Add a site"
-3. 输入 `www.hongjunshuke.com`
+3. 输入 `autodispenserpro.com`
 4. 复制以下代码到 `index.html` 的 `<head>` 中：
 ```html
 <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "YOUR_TOKEN"}'></script>
@@ -218,7 +218,7 @@
 
 ### Cloudflare Speed Page
 访问: https://www.cloudflare.com/speed-test/
-测试 `www.hongjunshuke.com` 的全球加载速度
+测试 `autodispenserpro.com` 的全球加载速度
 
 ---
 
