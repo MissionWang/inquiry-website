@@ -1,0 +1,37 @@
+{
+  "version": 2,
+  "jobs": [
+    {
+      "id": "cron-1775650274806-s3z1epjl",
+      "name": "Weekly Social Media Draft Generation",
+      "description": "Generate and draft weekly English social media content for AutoDispenserPro based on project data.",
+      "enabled": true,
+      "deleteAfterRun": false,
+      "createdAtMs": 1775650274806,
+      "updatedAtMs": 1775650274806,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * 1",
+        "tz": "Asia/Shanghai"
+      },
+      "payload": {
+        "kind": "agent",
+        "message": "Scan the project files and website for new content ideas. Generate 3 professional English social media posts (LinkedIn, X, Instagram) for AutoDispenserPro. Include relevant hashtags, image suggestions, and contact info (info@mail.hongjunshuke.com). Present the drafts for user approval.",
+        "agent": "DID-0D58EF-FA849A"
+      },
+      "state": {
+        "nextRunAtMs": 1776042000000
+      },
+      "target": {
+        "type": "conversation",
+        "conversationId": "CID-52103182U1775206-7FC3D5-9413-DED2A2"
+      },
+      "workspacePath": "D:\\workspace\\inquiry-website",
+      "createdBy": {
+        "source": "agent",
+        "actorId": "DID-0D58EF-FA849A"
+      },
+      "sessionTarget": "main"
+    }
+  ]
+}
