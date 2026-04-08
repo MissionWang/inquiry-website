@@ -21,7 +21,7 @@ const SITE_CONFIG = {
 
   // Contact
   contact: {
-    email: 'info@autodispenserpro.com',
+    email: 'info@mail.hongjunshuke.com',
     phone: '+86 15346172906',
     phoneRaw: '+86 15346172906',           // for tel: href
     whatsapp: '+86 15346172906',

@@ -28,13 +28,13 @@
 #### 方法 B: 固定邮箱 (最简单)
 直接在模板的 **To** 字段输入:
 ```
-info@autodispenserpro.com
+info@mail.hongjunshuke.com
 ```
 
 #### 方法 C: 多邮箱
 在模板的 **To** 字段输入多个邮箱:
 ```
-info@autodispenserpro.com, sales@mail.hongjunshuke.com
+info@mail.hongjunshuke.com, sales@mail.hongjunshuke.com
 ```
 
 ### 步骤 4: 保存模板
@@ -49,7 +49,7 @@ info@autodispenserpro.com, sales@mail.hongjunshuke.com
 1. **刷新浏览器** (Ctrl+F5)
 2. **填写测试表单**
 3. **点击提交**
-4. **检查邮箱** `info@autodispenserpro.com`
+4. **检查邮箱** `info@mail.hongjunshuke.com`
 
 ---
 
@@ -63,7 +63,7 @@ emailjs: {
   publicKey: 'loeH7DBCwJm48R2kt'
 },
 contact: {
-  email: 'info@autodispenserpro.com'
+  email: 'info@mail.hongjunshuke.com'
 }
 ```
 
@@ -146,5 +146,5 @@ var templateParams = {
 
 - **WhatsApp**: +86 15346172906
 - **WeChat**: 13265409026
-- **Email**: info@autodispenserpro.com
+- **Email**: info@mail.hongjunshuke.com
 
