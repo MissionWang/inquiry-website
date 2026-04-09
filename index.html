@@ -824,14 +824,8 @@ textarea.form-input { resize: vertical; min-height: 100px; }
         <h1><span>Glue Dispensing Robot</span> & Epoxy Resin Dispensing Systems</h1>
         <p>15+ years of R&D and manufacturing expertise. Leading <strong>automatic dispensing machine manufacturer</strong> in China, specialized in high precision dispensing valves, epoxy resin dispensing systems, and desktop dispensing machines for PCB. Trusted by manufacturers in 30+ countries for vacuum potting machine, encapsulation equipment, and precision potting solutions.</p>
         <div class="hero-buttons">
-          <a href="#inquiry" class="btn-primary">
-            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-            Request Quote
-          </a>
-          <a href="#video" class="btn-outline">
-            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-            Watch Video
-          </a>
+          <a href="#inquiry" class="btn-primary">Get a Free Quote</a>
+          <a href="#inquiry" class="btn-outline" onclick="setProductInterest('Download 2026 Catalog')">📥 Download 2026 Catalog</a>
         </div>
         <div class="hero-stats">
           <div class="stat-item"><h3>15+</h3><p>Years Experience</p></div>
@@ -916,7 +910,10 @@ textarea.form-input { resize: vertical; min-height: 100px; }
           <span style="color: #007bff; font-weight: bold; font-size: 0.9rem;">Technical Guide</span>
           <h3 style="margin: 10px 0; font-size: 1.25rem;"><a href="blog-high-precision-uv-dispensing.html" style="text-decoration: none; color: #333;">High-Precision UV Glue Dispensing: A Comprehensive Guide</a></h3>
           <p style="color: #666; font-size: 0.95rem; line-height: 1.5; margin-bottom: 20px;">Achieve ±0.03mm accuracy in your electronics manufacturing with integrated UV potting systems.</p>
-          <a href="blog-high-precision-uv-dispensing.html" style="display: inline-block; padding: 10px 20px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 0.9rem;">Read More →</a>
+          <div style="display: flex; gap: 10px;">
+            <a href="blog-high-precision-uv-dispensing.html" style="display: inline-block; padding: 10px 20px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 0.9rem;">Read More →</a>
+            <a href="#inquiry" onclick="setProductInterest('Download UV Dispensing Guide')" style="display: inline-block; padding: 10px 20px; background-color: #f1f5f9; color: #333; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 0.9rem; border: 1px solid #e2e8f0;">📥 PDF Guide</a>
+          </div>
         </div>
       </article>
       <article class="blog-card" style="background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1); border-bottom: 3px solid #28a745;">
@@ -924,7 +921,10 @@ textarea.form-input { resize: vertical; min-height: 100px; }
           <span style="color: #28a745; font-weight: bold; font-size: 0.9rem;">Buyer's Guide</span>
           <h3 style="margin: 10px 0; font-size: 1.25rem;"><a href="blog-buyers-guide-2026.html" style="text-decoration: none; color: #333;">2026 Dispensing Machine Buyer's Guide for SMEs</a></h3>
           <p style="color: #666; font-size: 0.95rem; line-height: 1.5; margin-bottom: 20px;">Learn how to choose the right potting machine without paying the "Big Brand Tax".</p>
-          <a href="blog-buyers-guide-2026.html" style="display: inline-block; padding: 10px 20px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 0.9rem;">Read More →</a>
+          <div style="display: flex; gap: 10px;">
+            <a href="blog-buyers-guide-2026.html" style="display: inline-block; padding: 10px 20px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 0.9rem;">Read More →</a>
+            <a href="#inquiry" onclick="setProductInterest('Download Buyer\'s Guide')" style="display: inline-block; padding: 10px 20px; background-color: #f1f5f9; color: #333; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 0.9rem; border: 1px solid #e2e8f0;">📥 PDF Guide</a>
+          </div>
         </div>
       </article>
     </div>
@@ -1078,14 +1078,19 @@ textarea.form-input { resize: vertical; min-height: 100px; }
             <label>Product of Interest</label>
             <select class="form-input" name="product" id="productSelect">
               <option value="">Select a product...</option>
-              <option value="Custom Keycaps">Custom ACG Keycaps (Artisan Series)</option>
-               <option value="Custom Charms">Custom ACG Acrylic Charms</option>
-               <option value="Custom">Other Custom Solution</option>
+              <option value="ADP-8060">Floor-Standing UV Dispenser (ADP-8060)</option>
+              <option value="ADP-331">Desktop Precision Potting Robot (ADP-331)</option>
+              <option value="ADP-AB200">Dual-Component System (ADP-AB200)</option>
+              <option value="Custom">Custom Industrial Solution</option>
             </select>
           </div>
           <div class="form-group">
             <label>Message <span class="required">*</span></label>
             <textarea class="form-input" name="message" rows="4" placeholder="Describe your customization needs: chamber size, vacuum level, material type, production capacity, or any specific requirements..." required></textarea>
+          </div>
+          <div style="margin-top: 15px; display: flex; align-items: center; gap: 8px; margin-bottom: 20px;">
+            <input type="checkbox" id="requestCatalog" name="catalog_request" checked style="width: 18px; height: 18px; cursor: pointer;">
+            <label for="requestCatalog" style="font-size: 0.9rem; color: var(--gray-600); cursor: pointer;">Send me the 2026 Product Catalog (PDF)</label>
           </div>
           <button type="submit" class="btn-submit" id="submitBtn">Send Inquiry &rarr;</button>
         </form>
@@ -1331,9 +1336,16 @@ async function loadProducts() {
 
 function setProductInterest(productName) {
   const productSelect = document.getElementById('productSelect');
+  const catalogCheckbox = document.getElementById('requestCatalog');
   if (productSelect) {
-    productSelect.value = productName;
+    if (productName.includes('Catalog') || productName.includes('Guide')) {
+      productSelect.value = 'Custom';
+      if (catalogCheckbox) catalogCheckbox.checked = true;
+    } else {
+      productSelect.value = productName;
+    }
   }
+}
 }
 
 // Load products on page load
