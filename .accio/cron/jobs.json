@@ -32,6 +32,38 @@
         "actorId": "DID-0D58EF-FA849A"
       },
       "sessionTarget": "main"
+    },
+    {
+      "id": "cron-1775710092625-el0axah6",
+      "name": "Daily Lead & Inquiry Monitor",
+      "description": "Daily automated check for LinkedIn engagement and EmailJS inquiry logs for AutoDispenserPro. Notify the user if action is needed.",
+      "enabled": true,
+      "deleteAfterRun": false,
+      "createdAtMs": 1775710092625,
+      "updatedAtMs": 1775710092625,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 10 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "payload": {
+        "kind": "agent",
+        "message": "Perform a daily scan of LinkedIn engagement (notifications/messages) and check the EmailJS service status for new inquiry logs from autodispenserpro.com. Summarize any new leads or urgent replies for the user. Provide the 'Quick-Reply' text if a specific question is asked.",
+        "agent": "DID-0D58EF-FA849A"
+      },
+      "state": {
+        "nextRunAtMs": 1775786400000
+      },
+      "target": {
+        "type": "conversation",
+        "conversationId": "CID-52103182U1775206-7FC3D5-9413-DED2A2"
+      },
+      "workspacePath": "D:\\workspace\\inquiry-website",
+      "createdBy": {
+        "source": "agent",
+        "actorId": "DID-0D58EF-FA849A"
+      },
+      "sessionTarget": "main"
     }
   ]
 }
