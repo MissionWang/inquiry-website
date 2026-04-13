@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://autodispenserpro.com/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -12,32 +12,14 @@
     </image:image>
   </url>
   <url>
-    <loc>https://autodispenserpro.com/#products</loc>
-    <lastmod>2026-04-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://autodispenserpro.com/#video</loc>
-    <lastmod>2026-04-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://autodispenserpro.com/#details</loc>
-    <lastmod>2026-04-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://autodispenserpro.com/#about</loc>
-    <lastmod>2026-04-07</lastmod>
+    <loc>https://autodispenserpro.com/blog-high-precision-uv-dispensing.html</loc>
+    <lastmod>2026-04-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://autodispenserpro.com/#inquiry</loc>
-    <lastmod>2026-04-07</lastmod>
+    <loc>https://autodispenserpro.com/blog-buyers-guide-2026.html</loc>
+    <lastmod>2026-04-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

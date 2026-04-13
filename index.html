@@ -31,247 +31,177 @@
 <meta name="theme-color" content="#0F52BA">
 <meta name="msapplication-TileColor" content="#0F52BA">
 
-<!-- FAQ Structured Data -->
+<!-- Structured Data -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "What is your delivery time for dispensing machines?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Standard automatic dispensing machines: 15-20 working days. Custom vacuum potting machines: 25-35 working days. We also provide expedited delivery for urgent orders."
+      "@type": "FAQPage",
+      "@id": "https://autodispenserpro.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is your delivery time for dispensing machines?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Standard automatic dispensing machines: 15-20 working days. Custom vacuum potting machines: 25-35 working days. We also provide expedited delivery for urgent orders."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you provide training and installation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! We provide comprehensive training including video tutorials, online technical guidance, and optional on-site installation support for our epoxy resin dispensing systems."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is your warranty policy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "12-month warranty on all automatic dispensing machines. Free replacement for defective parts during warranty period. Lifetime technical support included."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you customize the machine for our specific needs?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely! We specialize in custom engineering. We can tailor the epoxy resin dispensing system, chamber size, dispensing valve type, and control system to match your specific PCB potting or NEV sensor requirements."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What payment terms do you accept?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We accept T/T (30% deposit, 70% before shipping), L/C, and PayPal for small orders. Payment terms are negotiable for bulk orders."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is an automatic dispensing machine?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An automatic dispensing machine is precision equipment that dispenses materials like epoxy, polyurethane, or silicone onto products. HongJun is a leading automatic dispensing machine manufacturer in China, offering epoxy resin dispensing systems for PCB, NEV sensors, and electronics."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you provide glue dispensing robots in China?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, HongJun specializes in glue dispensing robots and automated dispensing solutions. Our systems feature high precision dispensing valves and customizable configurations for various industrial applications."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "VideoObject",
+      "@id": "https://autodispenserpro.com/#video1",
+      "name": "HongJun Automatic Vacuum Potting Machine Demo",
+      "description": "Watch our automatic dispensing machine in action - demonstrating precise epoxy resin dispensing system for PCB and NEV sensors. ±0.03mm accuracy.",
+      "thumbnailUrl": [
+        "https://autodispenserpro.com/images/products/product-01.png"
+      ],
+      "uploadDate": "2026-04-07T08:00:00+08:00",
+      "duration": "PT2M30S",
+      "contentUrl": "https://autodispenserpro.com/images/videos/video-2.mp4",
+      "embedUrl": "https://autodispenserpro.com/#video"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://autodispenserpro.com/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://autodispenserpro.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Products",
+          "item": "https://autodispenserpro.com/#products"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Gallery",
+          "item": "https://autodispenserpro.com/#details"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Contact",
+          "item": "https://autodispenserpro.com/#inquiry"
+        }
+      ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://autodispenserpro.com/#product",
+      "name": "Automatic Vacuum Potting Machine HJ-VPM-001",
+      "description": "HongJun automatic dispensing machine and epoxy resin dispensing system for PCB, NEV sensors, and electronics. Custom glue dispensing robots with high precision dispensing valves.",
+      "brand": {
+        "@type": "Brand",
+        "name": "HongJun"
+      },
+      "category": ["Dispensing Machine", "Potting Equipment", "Industrial Automation"],
+      "image": [
+        "https://autodispenserpro.com/images/products/product-01.png",
+        "https://autodispenserpro.com/images/products/product-02.png",
+        "https://autodispenserpro.com/images/products/product-03.png"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "0.00",
+        "availability": "https://schema.org/InStock",
+        "url": "https://autodispenserpro.com/#inquiry"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "42"
       }
     },
     {
-      "@type": "Question",
-      "name": "Do you provide training and installation?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes! We provide comprehensive training including video tutorials, online technical guidance, and optional on-site installation support for our epoxy resin dispensing systems."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is your warranty policy?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "12-month warranty on all automatic dispensing machines. Free replacement for defective parts during warranty period. Lifetime technical support included."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can you customize the machine for our specific needs?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Absolutely! We specialize in custom engineering. We can tailor the epoxy resin dispensing system, chamber size, dispensing valve type, and control system to match your specific PCB potting or NEV sensor requirements."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What payment terms do you accept?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "We accept T/T (30% deposit, 70% before shipping), L/C, and PayPal for small orders. Payment terms are negotiable for bulk orders."
-      }
+      "@type": "ItemList",
+      "@id": "https://autodispenserpro.com/#itemlist",
+      "name": "HongJun Automatic Dispensing Machines",
+      "description": "Complete lineup of automatic dispensing machines, epoxy resin dispensing systems, glue dispensing robots, high precision dispensing valves, and desktop dispensing machines for PCB.",
+      "numberOfItems": 10,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Automatic Vacuum Potting Machine",
+          "url": "https://autodispenserpro.com/#products"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Inline Vacuum Potting Line",
+          "url": "https://autodispenserpro.com/#products"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Desktop Vacuum Potting Machine",
+          "url": "https://autodispenserpro.com/#products"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Dual-Component Mixing System",
+          "url": "https://autodispenserpro.com/#products"
+        }
+      ]
     }
-  ]
-}
-</script>
-
-<!-- VideoObject Structured Data -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "VideoObject",
-  "name": "HongJun Automatic Vacuum Potting Machine Demo",
-  "description": "Watch our automatic dispensing machine in action - demonstrating precise epoxy resin dispensing system for PCB and NEV sensors. ±0.03mm accuracy.",
-  "thumbnailUrl": "https://autodispenserpro.com/images/products/product-01.png",
-  "uploadDate": "2026-04-07",
-  "duration": "PT2M30S",
-  "contentUrl": "https://autodispenserpro.com/images/videos/video-1.mp4",
-  "embedUrl": "https://autodispenserpro.com/#video"
-}
-</script>
-
-<!-- Breadcrumb Structured Data -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://autodispenserpro.com/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Products",
-      "item": "https://autodispenserpro.com/#products"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Gallery",
-      "item": "https://autodispenserpro.com/#details"
-    },
-    {
-      "@type": "ListItem",
-      "position": 4,
-      "name": "Contact",
-      "item": "https://autodispenserpro.com/#inquiry"
-    }
-  ]
-}
-</script>
-
-<!-- Article Structured Data for FAQ -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is an automatic dispensing machine?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "An automatic dispensing machine is precision equipment that dispenses materials like epoxy, polyurethane, or silicone onto products. HongJun is a leading automatic dispensing machine manufacturer in China, offering epoxy resin dispensing systems for PCB, NEV sensors, and electronics."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you provide glue dispensing robots in China?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, HongJun specializes in glue dispensing robots and automated dispensing solutions. Our systems feature high precision dispensing valves and customizable configurations for various industrial applications."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is an epoxy resin dispensing system?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "An epoxy resin dispensing system is designed for precise metering and mixing of epoxy materials. HongJun's epoxy resin dispensing systems ensure accurate ratio control, bubble-free dispensing, and consistent quality for electronics potting."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you have desktop dispensing machines for PCB?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, we offer desktop dispensing machines for PCB that are compact and ideal for R&D labs and small-scale production. These machines provide precision dispensing with minimal footprint."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Are you a high precision dispensing valve supplier?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "HongJun is a high precision dispensing valve supplier with pneumatic and electric valve options. Our valves feature flow rate control, material compatibility for various viscosities, and reliable performance."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How can I get a quote for automatic dispensing machines?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Contact us via inquiry form above. Please provide details about your application, material type, required precision, and production capacity. As a glue dispensing robot China manufacturer, we'll provide customized quotes."
-      }
-    }
-  ]
-}
-</script>
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Product",
-  "name": "Automatic Dispensing Machine & Vacuum Potting System",
-  "description": "HongJun automatic dispensing machine and epoxy resin dispensing system for PCB, NEV sensors, and electronics. Custom glue dispensing robots with high precision dispensing valves.",
-  "brand": {
-    "@type": "Brand",
-    "name": "HongJun"
-  },
-  "manufacturer": {
-    "@type": "Organization",
-    "name": "HongJun Vacuum Encapsulation Technology",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Shenzhen",
-      "addressCountry": "CN"
-    }
-  },
-  "category": ["Dispensing Machine", "Potting Equipment", "Industrial Automation"],
-  "image": [
-    "https://autodispenserpro.com/images/products/product-01.png",
-    "https://autodispenserpro.com/images/products/product-02.png",
-    "https://autodispenserpro.com/images/products/product-03.png"
-  ],
-  "offers": {
-    "@type": "Offer",
-    "priceCurrency": "USD",
-    "price": "Contact for Quote",
-    "availability": "https://schema.org/InStock",
-    "seller": {
-      "@type": "Organization",
-      "name": "HongJun Vacuum Encapsulation Technology"
-    }
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.8",
-    "reviewCount": "127",
-    "bestRating": "5",
-    "worstRating": "1"
-  }
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  "name": "HongJun Automatic Dispensing Machines",
-  "description": "Complete lineup of automatic dispensing machines, epoxy resin dispensing systems, glue dispensing robots, high precision dispensing valves, and desktop dispensing machines for PCB.",
-  "numberOfItems": 10,
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Automatic Vacuum Potting Machine",
-      "description": "Fully automatic vacuum potting system for NEV pressure sensors and electronics",
-      "url": "https://autodispenserpro.com/#products"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Inline Vacuum Potting Line",
-      "description": "High-speed inline production line for mass production",
-      "url": "https://autodispenserpro.com/#products"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Desktop Vacuum Potting Machine",
-      "description": "Compact design for small-scale production and R&D",
-      "url": "https://autodispenserpro.com/#products"
-    },
-    {
-      "@type": "ListItem",
-      "position": 4,
-      "name": "Dual-Component Mixing System",
-      "description": "Precision dual-component mixing for epoxy and polyurethane",
-      "url": "https://autodispenserpro.com/#products"
-    }
-  ]
-}
-</script>
   ]
 }
 </script>
@@ -865,7 +795,7 @@ textarea.form-input { resize: vertical; min-height: 100px; }
       <div class="customization-banner">
         <div class="banner-icon">&#9881;</div>
         <div class="banner-content">
-          <strong>All products are customizable</strong> — Each machine can be tailored to your specific requirements, specifications, and production needs.
+          <strong>All products are customizable</strong> �?Each machine can be tailored to your specific requirements, specifications, and production needs.
         </div>
       </div>
     </div>
@@ -885,11 +815,11 @@ textarea.form-input { resize: vertical; min-height: 100px; }
     </div>
     <div class="detail-grid">
       <img src="images/products/product-02.png" alt="Automatic Vacuum Potting Machine - Inline production line for mass manufacturing" loading="lazy" class="fade-in">
-      <img src="images/products/product-03.png" alt="Desktop Vacuum Potting Machine - Compact design for R&D and small batch production" loading="lazy" class="fade-in">
+      <img src="https://autodispenserpro.com/images/products/product-03.png" alt="Desktop Vacuum Potting Machine - Compact design for R&D and small batch production" loading="lazy" class="fade-in">
       <img src="images/products/product-04.png" alt="Dual-Component Mixing System - Precision mixing for epoxy and polyurethane" loading="lazy" class="fade-in">
       <img src="images/products/product-05.png" alt="Large-Scale Vacuum Chamber - Extra-large chamber for big components" loading="lazy" class="fade-in">
       <img src="images/products/product-06.png" alt="Heating & Curing System - Integrated heating for rapid material curing" loading="lazy" class="fade-in">
-      <img src="images/products/product-07.png" alt="Automated Dispensing Valve - High-precision dispensing valve for accurate delivery" loading="lazy" class="fade-in">
+      <img src="https://autodispenserpro.com/images/products/product-07.png" alt="Automated Dispensing Valve - High-precision dispensing valve for accurate delivery" loading="lazy" class="fade-in">
       <img src="images/products/product-08.png" alt="Material Storage Tank - Stainless steel tanks for potting materials" loading="lazy" class="fade-in">
       <img src="images/products/product-01.png" alt="Vacuum Pump System - High-performance vacuum pump for rapid evacuation" loading="lazy" class="fade-in">
     </div>
@@ -911,7 +841,7 @@ textarea.form-input { resize: vertical; min-height: 100px; }
           <h3 style="margin: 10px 0; font-size: 1.25rem;"><a href="blog-high-precision-uv-dispensing.html" style="text-decoration: none; color: #333;">High-Precision UV Glue Dispensing: A Comprehensive Guide</a></h3>
           <p style="color: #666; font-size: 0.95rem; line-height: 1.5; margin-bottom: 20px;">Achieve ±0.03mm accuracy in your electronics manufacturing with integrated UV potting systems.</p>
           <div style="display: flex; gap: 10px;">
-            <a href="blog-high-precision-uv-dispensing.html" style="display: inline-block; padding: 10px 20px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 0.9rem;">Read More →</a>
+            <a href="blog-high-precision-uv-dispensing.html" style="display: inline-block; padding: 10px 20px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 0.9rem;">Read More �?/a>
             <a href="#inquiry" onclick="setProductInterest('Download UV Dispensing Guide')" style="display: inline-block; padding: 10px 20px; background-color: #f1f5f9; color: #333; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 0.9rem; border: 1px solid #e2e8f0;">📥 PDF Guide</a>
           </div>
         </div>
@@ -922,7 +852,7 @@ textarea.form-input { resize: vertical; min-height: 100px; }
           <h3 style="margin: 10px 0; font-size: 1.25rem;"><a href="blog-buyers-guide-2026.html" style="text-decoration: none; color: #333;">2026 Dispensing Machine Buyer's Guide for SMEs</a></h3>
           <p style="color: #666; font-size: 0.95rem; line-height: 1.5; margin-bottom: 20px;">Learn how to choose the right potting machine without paying the "Big Brand Tax".</p>
           <div style="display: flex; gap: 10px;">
-            <a href="blog-buyers-guide-2026.html" style="display: inline-block; padding: 10px 20px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 0.9rem;">Read More →</a>
+            <a href="blog-buyers-guide-2026.html" style="display: inline-block; padding: 10px 20px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 0.9rem;">Read More �?/a>
             <a href="#inquiry" onclick="setProductInterest('Download Buyer\'s Guide')" style="display: inline-block; padding: 10px 20px; background-color: #f1f5f9; color: #333; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 0.9rem; border: 1px solid #e2e8f0;">📥 PDF Guide</a>
           </div>
         </div>
@@ -995,7 +925,7 @@ textarea.form-input { resize: vertical; min-height: 100px; }
     <div class="section-header center">
       <div class="section-label">Our Facility</div>
       <h2 class="section-title">Dongguan Manufacturing Base</h2>
-      <p class="section-desc">Located in Dongguan, China—the global hub for high-end electronics—our 8,000㎡ facility is the heart of <strong>AutoDispenserPro</strong>. As a leading <strong>automatic dispensing machine manufacturer</strong>, we combine industrial precision with flexible customization.</p>
+      <p class="section-desc">Located in Dongguan, China—the global hub for high-end electronics—our 8,000�?facility is the heart of <strong>AutoDispenserPro</strong>. As a leading <strong>automatic dispensing machine manufacturer</strong>, we combine industrial precision with flexible customization.</p>
     </div>
     <div class="factory-features" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 40px;">
       <div class="factory-card" style="background: white; padding: 30px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); text-align: center;">
@@ -1346,7 +1276,6 @@ function setProductInterest(productName) {
     }
   }
 }
-}
 
 // Load products on page load
 loadProducts();
@@ -1507,3 +1436,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 </body>
 </html>
+
+ript>
+
+</body>
+</html>
+
