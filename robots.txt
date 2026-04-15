@@ -10,3 +10,4 @@ Crawl-delay: 1
 # Disallow temporary or sensitive paths (if any)
 # Disallow: /private/
 # Disallow: /temp/
+
